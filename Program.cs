@@ -39,7 +39,33 @@ namespace Modules
                 name: "default",
                 pattern: "{controller=AccountController}/{action=Register}/{id?}");
 
+
+            app.MapControllerRoute(
+              name: "login",
+              pattern: "{controller=Account}/{action=Login}/{id?}");
+
+
+
             app.Run();
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

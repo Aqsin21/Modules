@@ -10,7 +10,7 @@ namespace Modules.Models
 
 
         [Required(ErrorMessage ="Username is required")]
-        public string Username { get; set; }
+        public string UserName { get; set; }
 
 
         [Required(ErrorMessage ="Password is required")]
@@ -21,6 +21,9 @@ namespace Modules.Models
         [Required(ErrorMessage ="Email is required")]
         [EmailAddress(ErrorMessage ="Email is invalid")]
         public string Email { get; set; }
+
+
+        public string PasswordHash { get; set; }
     }
 }
 
